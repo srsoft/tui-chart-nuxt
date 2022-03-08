@@ -9,5 +9,6 @@ export default function(chartType, elName, data) {
 
   if (chartType == 'line') toastui.Chart.lineChart({ el, data, options });
   else if (chartType == 'bar') toastui.Chart.barChart({ el, data, options });
+  else if (chartType == 'pie') toastui.Chart.pieChart({ el, data, options });
   return true
 }
